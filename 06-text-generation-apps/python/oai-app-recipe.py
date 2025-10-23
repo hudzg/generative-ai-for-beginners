@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # configure Azure OpenAI service client 
-client = OpenAI()
-deployment = "gpt-3.5-turbo"
+client = OpenAI(base_url="https://generativelanguage.googleapis.com/v1beta/openai/")
+deployment = "gemini-2.5-flash-lite"
 
 no_recipes = input("No of recipes (for example, 5: ")
 

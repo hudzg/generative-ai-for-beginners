@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # configure OpenAI service client 
-client = OpenAI()
-deployment = "gpt-3.5-turbo"
+client = OpenAI(base_url="https://generativelanguage.googleapis.com/v1beta/openai/")
+deployment = "gemini-2.5-flash"
 
 # add your completion code
 prompt = "Complete the following: Once upon a time there was a"
